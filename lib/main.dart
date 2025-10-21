@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'view/default_view.dart';
 
 void main() {
   runApp(const AlarmClockApp());
@@ -8,6 +9,8 @@ class AlarmClockApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const MaterialApp(
+      home: DefaultClockPage(),
+    );
   }
 }
